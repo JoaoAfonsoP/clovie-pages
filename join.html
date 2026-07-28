@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clovie — Join</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Join a shared account</h1>
+  <p class="subtitle">Someone using Clovie sent you this to share their calendar and shared space.</p>
+
+  <p class="code" id="code"></p>
+
+  <p id="withCode">If Clovie is already on your phone, this page should
+  have sent you there on its own. If nothing happened, open Clovie, go to
+  <strong>Us</strong>, tap the sync card, and type the code above under
+  <strong>Code from the other phone</strong>.</p>
+
+  <p id="noCode" hidden>This link is missing its code. Ask whoever sent it
+  to share it again.</p>
+
+  <p>Don't have Clovie yet? <a id="download" href="#">Get it for Android</a>,
+  then open this link again.</p>
+
+  <p><a href="index.html">Privacy</a> &middot; <a href="delete-account.html">Delete an account</a></p>
+</main>
+<script>
+(function () {
+  var code = new URLSearchParams(location.search).get('code');
+  document.getElementById('download').href = 'APK_URL_PLACEHOLDER';
+  if (code) {
+    document.getElementById('code').textContent = code;
+    location.href = 'clovie://join?code=' + encodeURIComponent(code);
+  } else {
+    document.getElementById('withCode').hidden = true;
+    document.getElementById('noCode').hidden = false;
+  }
+})();
+</script>
+</body>
+</html>

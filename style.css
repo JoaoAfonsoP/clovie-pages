@@ -66,6 +66,13 @@ th, td {
 }
 th { color: var(--muted); font-weight: 600; }
 a { color: var(--link); }
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.9rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
 footer {
   margin-top: 56px;
   padding-top: 24px;
