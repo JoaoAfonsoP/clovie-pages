@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clovie — Privacy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy</h1>
+  <p class="subtitle">Clovie, a calendar and shared space for two people.</p>
+
+  <p>Clovie is a calendar, a shopping list, a recipe book, a training log and
+  a cycle tracker for two people.</p>
+
+  <p>Everything the two of you put in stays on the phone it was typed on
+  until one of you signs in. The shared account is optional, and without it
+  there is no server behind the app at all.</p>
+
+  <p>With the shared account, what the two of you write is also held in a
+  database run by Firebase, a Google service, in Europe. That is what lets
+  both phones show the same things, and what brings everything back when a
+  new phone signs in. Only your two accounts can read it, the database
+  enforces that rule itself, and nobody at this end has another way in.
+  Nothing is sold, and nothing watches how you use the app.</p>
+
+  <p>Signing out keeps everything already on this phone and stops anything
+  more from travelling.</p>
+
+  <p>A copy you save goes wherever you choose to put it. From that moment it
+  is an ordinary file on your phone or your drive, under whatever protection
+  that place gives it, and the app has no further say over it.</p>
+
+  <p>If you let the app read the calendars already on the phone, it only
+  reads them. Those events are shown next to yours and are never changed,
+  never deleted and never written back.</p>
+
+  <p>Reminders are set on the phone itself, so the time you pick is known to
+  Android and to nothing else.</p>
+
+  <p>Erasing everything removes it from this phone for good, and from the
+  shared space and the other phone when the two are paired. For about three
+  months the shared space keeps a blank note in place of each removed row,
+  holding nothing readable, which is how a phone that was off learns about
+  the removal, and then the notes go too. A copy saved earlier is left
+  alone, because by then it belongs to the folder it was put in rather than
+  to the app.</p>
+
+  <p>Deleting your account, instead of just erasing what is on this phone,
+  removes your sign-in for good. Your own seat in the shared space goes
+  with it, right away rather than after the three months above. If someone
+  is still paired with you, the calendar, list, recipes and everything else
+  you both wrote stay exactly as they were for that person, the same as
+  leaving a shared document rather than tearing it up. <a href="delete-account.html">More on how to delete an account</a>.</p>
+
+  <h2>What the app asks the phone for</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th><th>Without it</th></tr>
+    <tr>
+      <td>Internet</td>
+      <td>To reach the shared account, so both phones hold the same things</td>
+      <td>Sits unused without the shared account</td>
+    </tr>
+    <tr>
+      <td>Calendars</td>
+      <td>To show events already on the phone next to your own. Android
+      grants reading and writing as one permission, and the app only ever
+      reads</td>
+      <td>The rest of the app works, that overlay is empty</td>
+    </tr>
+    <tr>
+      <td>Notifications</td>
+      <td>To ring at the time you set on an event</td>
+      <td>Events still save, they do not ring</td>
+    </tr>
+    <tr>
+      <td>Run after restart</td>
+      <td>So reminders already set survive the phone restarting</td>
+      <td>A reminder set before a restart is lost</td>
+    </tr>
+  </table>
+  <p>Nothing is asked for at startup. Each one is asked for the first time
+  you use the thing that needs it, and saying no leaves the rest of the app
+  alone. The internet permission is the one exception, Android grants it
+  with the install, and nothing uses it until somebody signs in.</p>
+
+  <h2>Children</h2>
+  <p>The app is not aimed at children and collects nothing that would
+  identify anybody, here or anywhere else.</p>
+
+  <h2>Changes</h2>
+  <p>If this ever changes, the wording changes with it in the same release,
+  and the app carries the current version of this page under Us, Privacy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions go to <a href="mailto:pjoao.vaz@gmail.com">pjoao.vaz@gmail.com</a>.</p>
+
+  <footer>
+    The same text is in the app itself, under Us, Privacy, so it can be
+    read before anything is typed in.
+  </footer>
+</main>
+</body>
+</html>
