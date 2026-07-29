@@ -29,7 +29,8 @@
 <script>
 (function () {
   var code = new URLSearchParams(location.search).get('code');
-  document.getElementById('download').href = 'APK_URL_PLACEHOLDER';
+  document.getElementById('download').href =
+    'https://github.com/JoaoAfonsoP/clovie-pages/releases/download/v1.0.0/clovie-v1.0.0.apk';
   if (code) {
     document.getElementById('code').textContent = code;
     location.href = 'clovie://join?code=' + encodeURIComponent(code);
