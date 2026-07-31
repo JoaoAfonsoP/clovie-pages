@@ -139,10 +139,17 @@ body.marketing a:hover { text-decoration: underline; }
   margin: 0 auto;
 }
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 800;
   font-size: 1.15rem;
   color: var(--fg) !important;
   letter-spacing: -0.01em;
+}
+.wordmark img {
+  border-radius: 8px;
+  display: block;
 }
 .site-header nav a {
   color: var(--muted) !important;
