@@ -3,103 +3,142 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clovie — Privacy</title>
+<title>Clovie — a calendar and a kitchen and a training log, for two</title>
+<meta name="description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="marketing">
+
+<header class="site-header">
+  <span class="wordmark">Clovie</span>
+  <nav>
+    <a href="#features">What it does</a>
+    <a href="#download">Get it</a>
+  </nav>
+</header>
+
 <main>
-  <h1>Privacy</h1>
-  <p class="subtitle">Clovie, a calendar and shared space for two people.</p>
 
-  <p>Clovie is a calendar, a shopping list, a recipe book, a training log and
-  a cycle tracker for two people.</p>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">For two people</p>
+      <h1>A calendar. A shopping list. A training log. A cycle tracker.<br>One app, for two.</h1>
+      <p class="lede">Whatever the two of you are keeping track of, in one shared place. No household plan, no monthly fee.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://github.com/JoaoAfonsoP/clovie-pages/releases/download/v1.0.0/clovie-v1.0.0.apk">Get it for Android</a>
+      </div>
+      <p class="hero-note">Free. Sign in together to share it, or start on your own first.</p>
+    </div>
+    <div class="hero-art reveal">
+      <img class="shot" src="img/shot-home.jpg" alt="Clovie's home screen, greeting both people by name with a days-together count and the day's plans underneath" width="640" height="1385" loading="eager">
+    </div>
+  </section>
 
-  <p>Everything the two of you put in stays on the phone it was typed on
-  until one of you signs in. The shared account is optional, and without it
-  there is no server behind the app at all.</p>
+  <section class="origin">
+    <div class="origin-inner reveal">
+      <h2>Why we made this</h2>
+      <p>We built Clovie for the two of us, to keep our own stuff straight: training, recipes, the shopping list for the day. We kept asking each other what we had coming up, so we started putting it in the app instead of asking. A small group of people are trying it with us now.</p>
+    </div>
+  </section>
 
-  <p>With the shared account, what the two of you write is also held in a
-  database run by Firebase, a Google service, in Europe. That is what lets
-  both phones show the same things, and what brings everything back when a
-  new phone signs in. Only your two accounts can read it, the database
-  enforces that rule itself, and nobody at this end has another way in.
-  Nothing is sold, and nothing watches how you use the app.</p>
+  <section class="features" id="features">
 
-  <p>Signing out keeps everything already on this phone and stops anything
-  more from travelling.</p>
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="img/shot-calendar.jpg" alt="Month view of the shared calendar with coloured dots marking whose event is whose" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>One calendar, both of your plans</h3>
+        <p>Every event is colour-coded, so whose it is is obvious at a glance. Anything already on your phone's own calendar shows right alongside it. Clovie only ever reads that, never touches it.</p>
+      </div>
+    </div>
 
-  <p>A copy you save goes wherever you choose to put it. From that moment it
-  is an ordinary file on your phone or your drive, under whatever protection
-  that place gives it, and the app has no further say over it.</p>
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="img/shot-shopping.jpg" alt="Shared shopping list sorted into Fresh and Cupboard sections, with quantities next to each item" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>One list, added to from two phones</h3>
+        <p>Add something from the sofa. It's already there when the other one's standing in the shop. Items sort into aisles as you type, so the list reads in the order you'll walk the store.</p>
+      </div>
+    </div>
 
-  <p>If you let the app read the calendars already on the phone, it only
-  reads them. Those events are shown next to yours and are never changed,
-  never deleted and never written back.</p>
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="img/shot-recipes.jpg" alt="Recipe book with cook time, servings and tags shown on each recipe card" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>A recipe book that remembers what you cook</h3>
+        <p>Save the ones you keep coming back to. Tag them, filter by how much time you've got, and turn any of them into a shopping list with one tap.</p>
+      </div>
+    </div>
 
-  <p>Reminders are set on the phone itself, so the time you pick is known to
-  Android and to nothing else.</p>
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="img/shot-gym.jpg" alt="Training overview showing a weekly streak, days trained this week, and sets logged by muscle group" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>A training log, not a spreadsheet</h3>
+        <p>Log a workout and watch the streak build. See the weeks you trained, not just the ones you meant to. Your weight and your lifts, tracked the same simple way.</p>
+      </div>
+    </div>
 
-  <p>Erasing everything removes it from this phone for good, and from the
-  shared space and the other phone when the two are paired. For about three
-  months the shared space keeps a blank note in place of each removed row,
-  holding nothing readable, which is how a phone that was off learns about
-  the removal, and then the notes go too. A copy saved earlier is left
-  alone, because by then it belongs to the folder it was put in rather than
-  to the app.</p>
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="img/shot-cycle.jpg" alt="Cycle tracking screen showing the current cycle day, next period and fertile window, and how the day felt" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Cycle tracking, right alongside everything else</h3>
+        <p>Turned on for whichever of you wants it, from setup or from settings later. Once it's on, your partner can open it from their own side of the app too, the same way the calendar and the list are shared.</p>
+      </div>
+    </div>
 
-  <p>Deleting your account, instead of just erasing what is on this phone,
-  removes your sign-in for good. Your own seat in the shared space goes
-  with it, right away rather than after the three months above. If someone
-  is still paired with you, the calendar, list, recipes and everything else
-  you both wrote stay exactly as they were for that person. Only your own
-  seat and the sign-in behind it are removed. <a href="delete-account.html">More on how to delete an account</a>.</p>
+  </section>
 
-  <h2>What the app asks the phone for</h2>
-  <table>
-    <tr><th>Permission</th><th>Why</th><th>Without it</th></tr>
-    <tr>
-      <td>Internet</td>
-      <td>To reach the shared account, so both phones hold the same things</td>
-      <td>Sits unused without the shared account</td>
-    </tr>
-    <tr>
-      <td>Calendars</td>
-      <td>To show events already on the phone next to your own. Android
-      grants reading and writing as one permission, and the app only ever
-      reads</td>
-      <td>The rest of the app works, that overlay is empty</td>
-    </tr>
-    <tr>
-      <td>Notifications</td>
-      <td>To ring at the time you set on an event</td>
-      <td>Events still save, they do not ring</td>
-    </tr>
-    <tr>
-      <td>Run after restart</td>
-      <td>So reminders already set survive the phone restarting</td>
-      <td>A reminder set before a restart is lost</td>
-    </tr>
-  </table>
-  <p>Nothing is asked for at startup. Each one is asked for the first time
-  you use the thing that needs it, and saying no leaves the rest of the app
-  alone. The internet permission is the one exception, Android grants it
-  with the install, and nothing uses it until somebody signs in.</p>
+  <section class="privacy-note reveal">
+    <div class="privacy-card">
+      <h2>Local by default</h2>
+      <p>Nothing about Clovie needs an account. Sign in together, and only the two of you can reach what you write. Use it alone instead, and nothing leaves the phone. Nothing sold, nothing watching how you use it.</p>
+      <p>Delete your account any time. Whoever you're paired with keeps their own copy exactly as it was. The full detail, including what the app asks the phone for, is on the <a href="privacy.html">privacy page</a>.</p>
+    </div>
+  </section>
 
-  <h2>Children</h2>
-  <p>The app is not aimed at children and collects nothing that would
-  identify anybody, here or anywhere else.</p>
+  <section class="cta-band reveal" id="download">
+    <h2>Try it with us</h2>
+    <p>Android only, for now. Install the file, open the app, and invite the other person in, or start on your own first.</p>
+    <a class="btn" href="https://github.com/JoaoAfonsoP/clovie-pages/releases/download/v1.0.0/clovie-v1.0.0.apk">Get it for Android</a>
+  </section>
 
-  <h2>Changes</h2>
-  <p>If this ever changes, the wording changes with it in the same release,
-  and the app carries the current version of this page under Us, Privacy.</p>
-
-  <h2>Contact</h2>
-  <p>Questions go to <a href="mailto:pjoao.vaz@gmail.com">pjoao.vaz@gmail.com</a>.</p>
-
-  <footer>
-    The same text is in the app itself, under Us, Privacy, so it can be
-    read before anything is typed in.
-  </footer>
 </main>
+
+<footer class="site-footer">
+  <nav>
+    <a href="privacy.html">Privacy</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="join.html">Have an invite code?</a>
+  </nav>
+  Clovie is built and run by the two people using it.
+</footer>
+
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
 </body>
 </html>
