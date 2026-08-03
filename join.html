@@ -3,7 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'en' &&
+        /^pt\b/i.test(navigator.language || '')) {
+      location.replace('pt/join.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Clovie — Join</title>
+<meta name="description" content="Someone using Clovie sent you this to share their calendar and shared space.">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="canonical" href="https://clovie.eu/join.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/join.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/join.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/join.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/join.html">
+<meta property="og:title" content="Clovie — Join">
+<meta property="og:description" content="Someone using Clovie sent you this to share their calendar and shared space.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — Join">
+<meta name="twitter:description" content="Someone using Clovie sent you this to share their calendar and shared space.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +49,7 @@
   <p>Don't have Clovie yet? <a id="download" href="#">Get it for Android</a>,
   then open this link again.</p>
 
-  <p><a href="privacy.html">Privacy</a> &middot; <a href="delete-account.html">Delete an account</a></p>
+  <p><a href="privacy.html">Privacy</a> &middot; <a href="delete-account.html">Delete an account</a> &middot; <a href="mailto:hello@clovie.eu">Contact</a> &middot; <a href="pt/join.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a></p>
 </main>
 <script>
 (function () {

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') === 'en') {
+      location.replace('../privacy.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
+<title>Clovie — Privacidade</title>
+<meta name="description" content="Clovie, um calendário e um espaço partilhado para duas pessoas.">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="canonical" href="https://clovie.eu/pt/privacy.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/privacy.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/pt/privacy.html">
+<meta property="og:title" content="Clovie — Privacidade">
+<meta property="og:description" content="Clovie, um calendário e um espaço partilhado para duas pessoas.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — Privacidade">
+<meta name="twitter:description" content="Clovie, um calendário e um espaço partilhado para duas pessoas.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <h1>Privacidade</h1>
+  <p class="subtitle">Clovie, um calendário e um espaço partilhado para duas pessoas.</p>
+
+  <p>O Clovie é um calendário, uma lista de compras, um livro de receitas, um
+  registo de treino e um registo de ciclo para duas pessoas.</p>
+
+  <p>Tudo o que os dois escrevem fica no telemóvel onde foi escrito até um
+  dos dois iniciar sessão. A conta partilhada é opcional, e sem ela não há
+  nenhum servidor por trás da app.</p>
+
+  <p>Com a conta partilhada, o que os dois escrevem fica também guardado
+  numa base de dados gerida pela Firebase, um serviço da Google, na Europa.
+  É isso que permite que os dois telemóveis mostrem as mesmas coisas, e que
+  tudo volte quando um telemóvel novo inicia sessão. Só as vossas duas
+  contas conseguem ler isso, a própria base de dados garante essa regra, e
+  ninguém deste lado tem outra forma de entrar. Nada é vendido, e nada
+  observa como usam a app.</p>
+
+  <p>As entradas de ciclo são guardadas e sincronizadas da mesma forma que
+  tudo o resto aqui, uma lista de compras ou um registo de treino, sem
+  encriptação ou controlo de acesso especial reservado para elas.</p>
+
+  <p>Terminar sessão mantém tudo o que já está neste telemóvel e impede que
+  mais alguma coisa viaje.</p>
+
+  <p>Uma cópia que guardes vai para onde escolheres. A partir desse momento
+  é um ficheiro normal no teu telemóvel ou na tua unidade, sob a proteção que
+  esse sítio der, e a app deixa de ter qualquer influência sobre ele.</p>
+
+  <p>Se deixares a app ler os calendários já no telemóvel, ela só os lê.
+  Esses eventos aparecem ao lado dos teus e nunca são alterados, nunca
+  eliminados e nunca escritos de volta.</p>
+
+  <p>Os lembretes são definidos no próprio telemóvel, por isso a hora que
+  escolhes é conhecida pelo Android e por mais nada.</p>
+
+  <p>Apagar tudo remove-o deste telemóvel para sempre, e do espaço
+  partilhado e do outro telemóvel quando os dois estão emparelhados. Durante
+  cerca de três meses o espaço partilhado guarda uma nota em branco no lugar
+  de cada linha removida, sem nada legível dentro, o que é como um
+  telemóvel que estava desligado fica a saber da remoção, e depois essas
+  notas também desaparecem. Uma cópia guardada antes fica intocada, porque a
+  partir daí pertence à pasta onde foi colocada e não à app.</p>
+
+  <p>Eliminar a tua conta, em vez de apenas apagar o que está neste
+  telemóvel, remove a tua sessão para sempre. O teu próprio lugar no espaço
+  partilhado vai com ela, de imediato em vez de depois dos três meses acima.
+  Se ainda houver alguém emparelhado contigo, o calendário, a lista, as
+  receitas e tudo o resto que os dois escreveram ficam exatamente como
+  estavam para essa pessoa. Só o teu lugar e a sessão por trás dele são
+  removidos. <a href="delete-account.html">Mais sobre como eliminar uma conta</a>.</p>
+
+  <h2>O que a app pede ao telemóvel</h2>
+  <table>
+    <tr><th>Permissão</th><th>Porquê</th><th>Sem ela</th></tr>
+    <tr>
+      <td>Internet</td>
+      <td>Para chegar à conta partilhada, para os dois telemóveis terem as
+      mesmas coisas</td>
+      <td>Sem a conta partilhada fica por usar</td>
+    </tr>
+    <tr>
+      <td>Calendários</td>
+      <td>Para mostrar eventos já no telemóvel ao lado dos teus. O Android
+      concede leitura e escrita como uma única permissão, e a app só lê</td>
+      <td>O resto da app funciona, essa sobreposição fica vazia</td>
+    </tr>
+    <tr>
+      <td>Notificações</td>
+      <td>Para tocar à hora que definires num evento</td>
+      <td>Os eventos continuam a guardar-se, só não tocam</td>
+    </tr>
+    <tr>
+      <td>Executar após reiniciar</td>
+      <td>Para os lembretes já definidos sobreviverem a um reinício do
+      telemóvel</td>
+      <td>Um lembrete definido antes de um reinício perde-se</td>
+    </tr>
+    <tr>
+      <td>Câmara</td>
+      <td>Para ler um código de barras ao registar alimentos</td>
+      <td>Podes sempre escrever os números do código de barras à mão</td>
+    </tr>
+  </table>
+  <p>Nada é pedido ao arrancar. Cada uma é pedida na primeira vez que usas o
+  que precisa dela, e dizer que não deixa o resto da app em paz. A permissão
+  de internet é a exceção, o Android concede-a com a instalação, e nada a
+  usa até alguém iniciar sessão.</p>
+
+  <h2>Crianças</h2>
+  <p>A app não é dirigida a crianças e não recolhe nada que identifique
+  ninguém, aqui ou em qualquer outro lado.</p>
+
+  <h2>Alterações</h2>
+  <p>Se isto alguma vez mudar, o texto muda com isso na mesma versão, e a
+  app traz a versão atual desta página em Nós, Privacidade.</p>
+
+  <h2>Contacto</h2>
+  <p>Perguntas para <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>.</p>
+
+  <footer>
+    O mesmo texto está na própria app, em Nós, Privacidade, para poder ser
+    lido antes de se escrever seja o que for. &middot;
+    <a href="../privacy.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </footer>
+</main>
+</body>
+</html>

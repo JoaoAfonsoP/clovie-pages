@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') === 'en') {
+      location.replace('../delete-account.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
+<title>Clovie — Eliminar a tua conta</title>
+<meta name="description" content="Duas formas de o fazer, consoante a app ainda esteja ou não no teu telemóvel.">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="canonical" href="https://clovie.eu/pt/delete-account.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/pt/delete-account.html">
+<meta property="og:title" content="Clovie — Eliminar a tua conta">
+<meta property="og:description" content="Duas formas de o fazer, consoante a app ainda esteja ou não no teu telemóvel.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — Eliminar a tua conta">
+<meta name="twitter:description" content="Duas formas de o fazer, consoante a app ainda esteja ou não no teu telemóvel.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <h1>Eliminar a tua conta</h1>
+  <p class="subtitle">Duas formas de o fazer, consoante a app ainda esteja ou não no teu telemóvel.</p>
+
+  <h2>A partir da app</h2>
+  <p>Esta é a opção mais rápida, e tem efeito imediato. Só aparece depois de
+  te teres emparelhado com alguém, por isso se tiveres sessão iniciada
+  sozinho, usa a opção por email abaixo.</p>
+  <ol>
+    <li>Abre o Clovie e vai a <strong>Nós</strong>.</li>
+    <li>Toca no cartão de sincronização para abrir <strong>Conta partilhada</strong>,
+    e inicia sessão se ainda não o fizeste.</li>
+    <li>Perto do fundo, toca em <strong>Eliminar a tua conta</strong>, e
+    confirma.</li>
+  </ol>
+  <p>Isto remove a tua própria sessão. Nada teu fica neste
+  telemóvel, e não pode ser desfeito. Se ainda houver alguém emparelhado
+  contigo, o calendário, a lista, as receitas e tudo o resto que os dois
+  escreveram ficam exatamente como estavam para essa pessoa. Só o teu lugar
+  e a tua sessão são removidos.</p>
+
+  <h2>Sem a app</h2>
+  <p>Se já não tens a app instalada, não consegues iniciar sessão, ou tens
+  sessão iniciada sozinho sem ninguém emparelhado ainda, envia um email para
+  <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>
+  a partir do endereço que a tua conta usa, e pede que seja eliminada. Assim
+  que isso for confirmado, acontece o mesmo que acima, a tua sessão é
+  removida, e quem ainda estiver emparelhado contigo mantém a própria cópia
+  do espaço partilhado exatamente como estava.</p>
+
+  <h2>Uma cópia que guardaste antes</h2>
+  <p>Uma cópia que exportaste tu próprio é um ficheiro normal onde quer que
+  o tenhas guardado. Eliminar a tua conta não o afeta. Remover esse ficheiro,
+  se também o quiseres, é um passo à parte.</p>
+
+  <p><a href="privacy.html">Voltar à página de privacidade</a>. &middot; <a href="../delete-account.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a></p>
+</main>
+</body>
+</html>

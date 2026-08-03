@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') === 'en') {
+      location.replace('../index.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
+<title>Clovie — um calendário, uma cozinha e um registo de treino, para os dois</title>
+<meta name="description" content="O Clovie é um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="canonical" href="https://clovie.eu/pt/index.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/index.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/index.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/pt/index.html">
+<meta property="og:title" content="Clovie — um calendário, uma cozinha e um registo de treino, para os dois">
+<meta property="og:description" content="O Clovie é um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — um calendário, uma cozinha e um registo de treino, para os dois">
+<meta name="twitter:description" content="O Clovie é um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="marketing">
+
+<header class="site-header">
+  <span class="wordmark"><img src="../img/icon.png" alt="" width="40" height="40">Clovie</span>
+  <nav>
+    <a href="#features">O que faz</a>
+    <a href="#download">Instalar</a>
+    <a href="../index.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Para duas pessoas</p>
+      <h1>Um calendário. Uma lista de compras. Um registo de treino. Um registo de ciclo.<br>Uma só app, para os dois.</h1>
+      <p class="lede">Tudo o que os dois estão a acompanhar, num único sítio partilhado. Sem plano de casal, sem mensalidade.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://github.com/JoaoAfonsoP/clovie-pages/releases/download/v1.0.1/clovie-v1.0.1.apk">Instalar para Android</a>
+      </div>
+      <p class="hero-note">Grátis. Iniciem sessão juntos para partilhar, ou comecem sozinhos primeiro.</p>
+    </div>
+    <div class="hero-art reveal">
+      <img class="shot" src="../img/shot-home.jpg" alt="Ecrã inicial do Clovie, a cumprimentar as duas pessoas pelo nome com a contagem de dias juntos e os planos do dia por baixo" width="640" height="1385" loading="eager">
+    </div>
+  </section>
+
+  <section class="origin">
+    <div class="origin-inner reveal">
+      <h2>Porque fizemos isto</h2>
+      <p>Fizemos o Clovie para nós os dois, para manter as nossas próprias coisas organizadas: treino, receitas, a lista de compras do dia. Andávamos sempre a perguntar um ao outro o que tínhamos a seguir, por isso começámos a pôr tudo na app em vez de perguntar. Um pequeno grupo de pessoas está a experimentá-la connosco agora.</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="../img/shot-calendar.jpg" alt="Vista mensal do calendário partilhado com pontos coloridos a marcar de quem é cada evento" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Um calendário, os planos dos dois</h3>
+        <p>Cada evento tem uma cor diferente, por isso é óbvio de quem é, à primeira vista. O que já está no calendário do teu telemóvel aparece mesmo ao lado. O Clovie só lê isso, nunca mexe.</p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="../img/shot-shopping.jpg" alt="Lista de compras partilhada organizada em secções Frescos e Despensa, com quantidades ao lado de cada item" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Uma lista, adicionada a partir de dois telemóveis</h3>
+        <p>Acrescenta algo do sofá. Já lá está quando o outro estiver no supermercado. Os itens organizam-se por corredor à medida que escreves, para a lista ficar pela ordem que percorres a loja.</p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="../img/shot-recipes.jpg" alt="Livro de receitas com tempo de confeção, doses e etiquetas indicados em cada receita" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Um livro de receitas que se lembra do que cozinham</h3>
+        <p>Guarda as que voltam a fazer sempre. Etiqueta-as por refeição ou por vontade, e transforma qualquer uma numa lista de compras com um toque.</p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="../img/shot-gym.jpg" alt="Resumo de treino a mostrar uma sequência semanal, dias treinados esta semana e séries registadas por grupo muscular" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Um registo de treino, não uma folha de cálculo</h3>
+        <p>Regista um treino e vê a sequência crescer. Vê as semanas em que treinaste, não só as que pretendias. O teu peso e os teus exercícios, acompanhados da mesma forma simples.</p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art">
+        <img class="shot" src="../img/shot-cycle.jpg" alt="Ecrã de registo de ciclo a mostrar o dia atual do ciclo, o próximo período e a janela fértil, e como correu o dia" width="640" height="1385" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Registo de ciclo, ao lado de tudo o resto</h3>
+        <p>Ativado por quem dos dois quiser, na configuração inicial ou mais tarde nas definições. Ativa-o e o teu parceiro também o pode ver, do lado dele na app, depois de também ter ativado o registo de ciclo para si próprio.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="roadmap reveal">
+    <div class="roadmap-card">
+      <h2>Ainda em construção</h2>
+      <p>As receitas só podem ser marcadas como "rápidas" à mão, por agora. Filtrar pelo tempo real que uma receita demora é o próximo passo.</p>
+      <p>O registo de ciclo só mostra o lado do teu parceiro depois de o teres ativado também para ti. Fazer com que funcione sem precisares de o ter ativado é o passo a seguir.</p>
+    </div>
+  </section>
+
+  <section class="privacy-note reveal">
+    <div class="privacy-card">
+      <h2>Local por predefinição</h2>
+      <p>Iniciem sessão juntos, e só os dois conseguem aceder ao que escrevem. Sem isso, nada sai do telemóvel, sem precisar de conta nenhuma. De qualquer forma, nada é vendido e nada observa como usam a app.</p>
+      <p>Eliminem a conta a qualquer momento. Quem estiver emparelhado convosco mantém a própria cópia exatamente como estava. Todo o detalhe, incluindo o que a app pede ao telemóvel, está na <a href="privacy.html">página de privacidade</a>.</p>
+    </div>
+  </section>
+
+  <section class="cta-band reveal" id="download">
+    <h2>Experimentem connosco</h2>
+    <p>Só para Android, por agora. Instala o ficheiro, abre a app, e convida a outra pessoa, ou começa sozinho primeiro.</p>
+    <a class="btn" href="https://github.com/JoaoAfonsoP/clovie-pages/releases/download/v1.0.1/clovie-v1.0.1.apk">Instalar para Android</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <nav>
+    <a href="privacy.html">Privacidade</a>
+    <a href="delete-account.html">Eliminar uma conta</a>
+    <a href="join.html">Tens um código de convite?</a>
+    <a href="mailto:hello@clovie.eu">Contacto</a>
+  </nav>
+  O Clovie é feito e gerido pelas duas pessoas que o usam.
+</footer>
+
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>

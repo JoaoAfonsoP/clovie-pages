@@ -3,7 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'en' &&
+        /^pt\b/i.test(navigator.language || '')) {
+      location.replace('pt/delete-account.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Clovie — Delete your account</title>
+<meta name="description" content="Two ways to do it, depending on whether the app is still on your phone.">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="canonical" href="https://clovie.eu/delete-account.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/delete-account.html">
+<meta property="og:title" content="Clovie — Delete your account">
+<meta property="og:description" content="Two ways to do it, depending on whether the app is still on your phone.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — Delete your account">
+<meta name="twitter:description" content="Two ways to do it, depending on whether the app is still on your phone.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,7 +56,7 @@
   <h2>Without the app</h2>
   <p>If you no longer have the app installed, cannot sign in, or are
   signed in alone with nobody paired yet, email
-  <a href="mailto:pjoao.vaz@gmail.com">pjoao.vaz@gmail.com</a>
+  <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>
   from the address your account uses, and ask for it to be deleted. Once
   that is confirmed, the same thing happens as above: your sign-in is
   removed, and anyone still paired with you keeps their copy of the shared
@@ -42,7 +67,7 @@
   Deleting your account does not affect it. Removing that file, if you want
   it gone too, is a separate step.</p>
 
-  <p><a href="privacy.html">Back to the privacy page</a>.</p>
+  <p><a href="privacy.html">Back to the privacy page</a>. &middot; <a href="pt/delete-account.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a></p>
 </main>
 </body>
 </html>

@@ -3,8 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'en' &&
+        /^pt\b/i.test(navigator.language || '')) {
+      location.replace('pt/index.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Clovie — a calendar and a kitchen and a training log, for two</title>
 <meta name="description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="canonical" href="https://clovie.eu/">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/">
+<meta property="og:title" content="Clovie — a calendar and a kitchen and a training log, for two">
+<meta property="og:description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — a calendar and a kitchen and a training log, for two">
+<meta name="twitter:description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="marketing">
@@ -14,6 +38,7 @@
   <nav>
     <a href="#features">What it does</a>
     <a href="#download">Get it</a>
+    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
   </nav>
 </header>
 
@@ -124,6 +149,7 @@
     <a href="privacy.html">Privacy</a>
     <a href="delete-account.html">Delete an account</a>
     <a href="join.html">Have an invite code?</a>
+    <a href="mailto:hello@clovie.eu">Contact</a>
   </nav>
   Clovie is built and run by the two people using it.
 </footer>

@@ -3,7 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'en' &&
+        /^pt\b/i.test(navigator.language || '')) {
+      location.replace('pt/privacy.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Clovie — Privacy</title>
+<meta name="description" content="Clovie, a calendar and shared space for two people.">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="canonical" href="https://clovie.eu/privacy.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/privacy.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clovie.eu/privacy.html">
+<meta property="og:title" content="Clovie — Privacy">
+<meta property="og:description" content="Clovie, a calendar and shared space for two people.">
+<meta property="og:image" content="https://clovie.eu/img/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Clovie — Privacy">
+<meta name="twitter:description" content="Clovie, a calendar and shared space for two people.">
+<meta name="twitter:image" content="https://clovie.eu/img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -83,6 +108,11 @@
       <td>So reminders already set survive the phone restarting</td>
       <td>A reminder set before a restart is lost</td>
     </tr>
+    <tr>
+      <td>Camera</td>
+      <td>To scan a barcode when logging food</td>
+      <td>You can still type the barcode's numbers in instead</td>
+    </tr>
   </table>
   <p>Nothing is asked for at startup. Each one is asked for the first time
   you use the thing that needs it, and saying no leaves the rest of the app
@@ -98,11 +128,12 @@
   and the app carries the current version of this page under Us, Privacy.</p>
 
   <h2>Contact</h2>
-  <p>Questions go to <a href="mailto:pjoao.vaz@gmail.com">pjoao.vaz@gmail.com</a>.</p>
+  <p>Questions go to <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>.</p>
 
   <footer>
     The same text is in the app itself, under Us, Privacy, so it can be
-    read before anything is typed in.
+    read before anything is typed in. &middot;
+    <a href="pt/privacy.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
   </footer>
 </main>
 </body>
