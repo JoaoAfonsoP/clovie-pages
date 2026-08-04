@@ -257,6 +257,86 @@ body.marketing a:hover { text-decoration: underline; }
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* ---- Self-service account deletion (delete-account.html). ---- */
+.ss-box {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin: 0 0 16px;
+  background: var(--card);
+}
+.ss-actions { margin-bottom: 14px; }
+.ss-btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.ss-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: none !important;
+}
+.ss-or {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 10px;
+}
+.ss-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0;
+}
+.ss-form input {
+  flex: 1 1 180px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+.ss-btn-outline {
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  background: transparent;
+  color: var(--fg) !important;
+  border: 1px solid var(--line) !important;
+}
+.ss-btn-outline:hover { background: var(--bg); }
+.ss-btn-danger {
+  background: #b33f3f;
+}
+.ss-link-btn {
+  background: none;
+  border: none;
+  color: var(--link);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.92rem;
+  padding: 10px 4px;
+}
+.ss-error {
+  color: #b33f3f;
+  font-size: 0.9rem;
+  margin: 10px 0 0;
+}
+#ssConfirmInput {
+  display: block;
+  width: 140px;
+  padding: 10px 12px;
+  margin: 12px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: inherit;
+  text-transform: uppercase;
+}
 .feature {
   display: grid;
   grid-template-columns: 1fr 1fr;
