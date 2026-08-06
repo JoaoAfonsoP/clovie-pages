@@ -1,0 +1,3 @@
+# Claude Code's local dev-server launch config for this tool's browser
+# preview. Machine-local, not something another contributor needs from git.
+.claude/
