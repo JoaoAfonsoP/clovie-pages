@@ -53,8 +53,9 @@
 <script>
 (function () {
   var code = new URLSearchParams(location.search).get('code');
-  document.getElementById('download').href =
-    'https://github.com/JoaoAfonsoP/clovie-pages/releases/download/v1.0.2/clovie-v1.0.2.apk';
+  /* A página inicial e não o ficheiro: a transferência precisa dos dois
+     avisos do Android explicados, e essa explicação está lá. */
+  document.getElementById('download').href = 'index.html#download';
   if (code) {
     document.getElementById('code').textContent = code;
     location.href = 'clovie://join?code=' + encodeURIComponent(code);
