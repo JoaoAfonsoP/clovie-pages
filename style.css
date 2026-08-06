@@ -382,6 +382,8 @@ body.marketing a:hover { text-decoration: underline; }
 }
 .privacy-card p, .roadmap-card p { color: var(--muted); margin-bottom: 12px; }
 .privacy-card p:last-child, .roadmap-card p:last-child { margin-bottom: 0; }
+.roadmap-card ul { color: var(--muted); margin-bottom: 0; }
+.roadmap-card li:last-child { margin-bottom: 0; }
 
 .cta-band {
   max-width: 1080px;
