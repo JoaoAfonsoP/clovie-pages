@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://clovie.eu/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/index.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/privacy.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/privacy.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/delete-account.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/delete-account.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/join.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/join.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/join.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/join.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/join.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/join.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/join.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/join.html"/>
+  </url>
+
+</urlset>
