@@ -1,0 +1,17 @@
+Copyright (c) 2026 João Vaz. All rights reserved.
+
+This repository is the Clovie website: its pages, its stylesheet, its
+wording and the screenshots in it. It is public because GitHub Pages serves
+the site from it, not so that it can be reused. No permission is granted to
+copy, modify, republish or redistribute any of it.
+
+The Manrope font in fonts/ is not covered by the above. It is under the SIL
+Open Font Licence 1.1, whose text is in fonts/OFL.txt, and that licence is
+the one that governs it.
+
+THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE MATERIAL OR THE USE OR OTHER DEALINGS IN IT.
