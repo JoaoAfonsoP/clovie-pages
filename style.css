@@ -392,10 +392,24 @@ a.wordmark { text-decoration: none !important; }
 .feature:nth-child(even) .feature-copy { order: 1; }
 .feature:nth-child(3) .feature-art > .shot { transform: rotate(-1.6deg); }
 .feature-art .shot { max-width: 280px; margin: 0 auto; }
-.feature-art .pair { position: relative; max-width: 460px; margin: 0 auto; padding-bottom: 68px; }
+.feature-art .pair { position: relative; max-width: 460px; margin: 0 auto; padding-bottom: 72px; }
 .feature-art .pair .shot { max-width: none; margin: 0; }
-.feature-art .pair .a { width: 52%; position: relative; z-index: 2; }
-.feature-art .pair .b { width: 52%; position: absolute; right: 0; top: 68px; z-index: 1; }
+.feature-art .pair .a { width: 52%; position: relative; z-index: 2; transform: rotate(-1.8deg); }
+.feature-art .pair .b { width: 52%; position: absolute; right: 0; top: 68px; z-index: 1; transform: rotate(2.2deg); }
+/* The middle section steps the other way, so three sections are not the
+   same picture three times over. */
+.feature-art .pair.mirror .a { margin-left: auto; transform: rotate(2deg); }
+.feature-art .pair.mirror .b { right: auto; left: 0; top: 92px; transform: rotate(-2.4deg); }
+
+/* Training has three screens to show, so that section gives up the two
+   columns and lays them across the whole width instead. */
+.feature.feature-wide { grid-template-columns: 1fr; gap: 36px; }
+.feature.feature-wide .feature-copy p { max-width: 62ch; }
+.feature-art .trio { display: flex; gap: 18px; align-items: flex-start; }
+.feature-art .trio .shot { max-width: none; width: 100%; margin: 0; }
+.feature-art .trio .shot:nth-child(1) { transform: rotate(-2.2deg); }
+.feature-art .trio .shot:nth-child(2) { margin-top: 30px; transform: rotate(1.4deg); }
+.feature-art .trio .shot:nth-child(3) { margin-top: 8px; transform: rotate(-1deg); }
 .feature-copy h3 {
   font-size: 1.5rem;
   font-weight: 800;
@@ -536,6 +550,12 @@ a.wordmark { text-decoration: none !important; }
     order: initial;
   }
   .site-header nav a { margin-left: 16px; }
+  /* Three phones across a phone is three phones nobody can read, so on a
+     narrow screen the row slides sideways instead of shrinking. */
+  .feature-art .trio { overflow-x: auto; gap: 14px; }
+  .feature-art .trio .shot { flex: 0 0 64%; }
+  .feature-art .trio .shot:nth-child(2) { margin-top: 0; }
+  .feature-art .trio .shot:nth-child(3) { margin-top: 0; }
 }
 
 /* The line at the foot of the terms saying when they last moved. Quiet,
