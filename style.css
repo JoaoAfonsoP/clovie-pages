@@ -404,28 +404,26 @@ a.wordmark { text-decoration: none !important; }
   max-width: 42ch;
 }
 
-.privacy-note, .roadmap {
+.privacy-note {
   max-width: 1080px;
   margin: 8px auto 88px;
   padding: 0 20px;
 }
-.privacy-card, .roadmap-card {
+.privacy-card {
   background: var(--card);
   border: 1px solid var(--card-line);
   border-radius: 20px;
   padding: 36px;
   max-width: 720px;
 }
-.privacy-card h2, .roadmap-card h2 {
+.privacy-card h2 {
   border-top: none;
   padding-top: 0;
   margin-top: 0;
   font-size: 1.25rem;
 }
-.privacy-card p, .roadmap-card p { color: var(--muted); margin-bottom: 12px; }
-.privacy-card p:last-child, .roadmap-card p:last-child { margin-bottom: 0; }
-.roadmap-card ul { color: var(--muted); margin-bottom: 0; }
-.roadmap-card li:last-child { margin-bottom: 0; }
+.privacy-card p { color: var(--muted); margin-bottom: 12px; }
+.privacy-card p:last-child { margin-bottom: 0; }
 
 .cta-band {
   max-width: 1080px;
