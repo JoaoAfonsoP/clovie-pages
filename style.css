@@ -390,8 +390,12 @@ a.wordmark { text-decoration: none !important; }
 .feature:first-child { border-top: none; }
 .feature:nth-child(even) .feature-art { order: 2; }
 .feature:nth-child(even) .feature-copy { order: 1; }
-.feature:nth-child(3) .feature-art .shot { transform: rotate(-1.6deg); }
+.feature:nth-child(3) .feature-art > .shot { transform: rotate(-1.6deg); }
 .feature-art .shot { max-width: 280px; margin: 0 auto; }
+.feature-art .pair { position: relative; max-width: 460px; margin: 0 auto; padding-bottom: 68px; }
+.feature-art .pair .shot { max-width: none; margin: 0; }
+.feature-art .pair .a { width: 52%; position: relative; z-index: 2; }
+.feature-art .pair .b { width: 52%; position: absolute; right: 0; top: 68px; z-index: 1; }
 .feature-copy h3 {
   font-size: 1.5rem;
   font-weight: 800;
