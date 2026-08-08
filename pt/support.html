@@ -12,35 +12,50 @@
   } catch (e) {}
 })();
 </script>
-<title>Clovie — Ajuda</title>
+<title>Clovie &middot; Ajuda</title>
 <meta name="description" content="Como falar connosco, e as respostas ao que perguntam mais vezes.">
 <link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/pt/support.html">
 <link rel="alternate" hreflang="en" href="https://clovie.eu/support.html">
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/support.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/support.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/pt/support.html">
-<meta property="og:title" content="Clovie — Ajuda">
+<meta property="og:title" content="Clovie &middot; Ajuda">
 <meta property="og:description" content="Como falar connosco, e as respostas ao que perguntam mais vezes.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie — Ajuda">
+<meta name="twitter:title" content="Clovie &middot; Ajuda">
 <meta name="twitter:description" content="Como falar connosco, e as respostas ao que perguntam mais vezes.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-<main>
+<body class="doc">
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="../img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">O que faz</a>
+    <a href="index.html#download">Instalar</a>
+    <a href="support.html">Ajuda</a>
+    <a href="../support.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+</header>
+
+<main id="main">
   <h1>Ajuda</h1>
   <p class="subtitle">Como falar connosco, e as respostas ao que perguntam
   mais vezes.</p>
 
-  <p>Escreve para <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>. Somos
-  dois a ler, por isso a resposta costuma demorar um dia ou dois e não uma
-  hora. Se alguma coisa correu mal, diz onde tocaste e o que aconteceu em vez
+  <p>Escreve para <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>. A
+  resposta costuma demorar um dia ou dois e não uma hora. Se alguma coisa
+  correu mal, diz onde tocaste e o que aconteceu em vez
   do esperado, e em que versão estás. A versão está no fim do separador Nós.</p>
 
   <h2>A outra pessoa não vê o que eu adicionei</h2>
@@ -96,12 +111,20 @@
   conta</a>. Quem estiver emparelhado contigo mantém a própria cópia de tudo
   exatamente como estava.</p>
 
-  <footer>
-    O que não estiver respondido aqui vai para
-    <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>. &middot;
-    <a href="privacy.html">Privacidade</a> &middot;
-    <a href="../support.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
-  </footer>
 </main>
+
+<footer class="site-footer">
+  <nav aria-label="Mais">
+    <a href="index.html">Início</a>
+    <a href="support.html">Ajuda</a>
+    <a href="../whats-new.html">O que mudou</a>
+    <a href="privacy.html">Privacidade</a>
+    <a href="terms.html">Termos</a>
+    <a href="delete-account.html">Apagar uma conta</a>
+    <a href="join.html">Tens um código?</a>
+    <a href="../support.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
 </body>
 </html>

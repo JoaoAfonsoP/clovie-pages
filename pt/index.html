@@ -12,31 +12,50 @@
   } catch (e) {}
 })();
 </script>
-<title>Clovie — um calendário, uma cozinha e um registo de treino, para os dois</title>
+<title>Clovie &middot; um calendário, uma cozinha e um registo de treino, para os dois</title>
 <meta name="description" content="O Clovie é um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.">
 <link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/pt/index.html">
 <link rel="alternate" hreflang="en" href="https://clovie.eu/index.html">
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/index.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/pt/index.html">
-<meta property="og:title" content="Clovie — um calendário, uma cozinha e um registo de treino, para os dois">
+<meta property="og:title" content="Clovie &middot; um calendário, uma cozinha e um registo de treino, para os dois">
 <meta property="og:description" content="O Clovie é um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie — um calendário, uma cozinha e um registo de treino, para os dois">
+<meta name="twitter:title" content="Clovie &middot; um calendário, uma cozinha e um registo de treino, para os dois">
 <meta name="twitter:description" content="O Clovie é um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clovie",
+  "operatingSystem": "Android",
+  "applicationCategory": "LifestyleApplication",
+  "url": "https://clovie.eu/pt/index.html",
+  "downloadUrl": "https://github.com/JoaoAfonsoP/clovie-pages/releases/latest/download/clovie.apk",
+  "image": "https://clovie.eu/img/og.png",
+  "inLanguage": "pt-PT",
+  "description": "Um calendário, uma lista de compras, um livro de receitas, um registo de treino e um registo de ciclo para duas pessoas partilharem.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
 </head>
 <body class="marketing">
+<a class="skip" href="#main">Saltar para o conteúdo</a>
 
 <header class="site-header">
   <span class="wordmark"><img src="../img/icon.png" alt="" width="40" height="40">Clovie</span>
-  <nav>
+  <nav aria-label="Site">
     <a href="#features">O que faz</a>
     <a href="#download">Instalar</a>
     <a href="support.html">Ajuda</a>
@@ -44,7 +63,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main">
 
   <section class="hero">
     <div>
@@ -62,8 +81,8 @@
 
   <section class="origin">
     <div class="origin-inner reveal">
-      <h2>Porque fizemos isto</h2>
-      <p>Fizemos o Clovie para nós os dois, para manter as nossas próprias coisas organizadas: treino, receitas, a lista de compras do dia. Andávamos sempre a perguntar um ao outro o que tínhamos a seguir, por isso começámos a pôr tudo na app em vez de perguntar. Um pequeno grupo de pessoas está a experimentá-la connosco agora.</p>
+      <h2>Porque existe o Clovie</h2>
+      <p>O Clovie é feito para duas pessoas que partilham a vida, e não para uma casa de dez com um plano e uma mensalidade. Um calendário, uma lista de compras, um livro de receitas, e um registo de treino para cada um. Começou com a pergunta que duas pessoas mais fazem uma à outra, o que temos esta semana, e a resposta pertence a um sítio que os dois conseguem ver.</p>
     </div>
   </section>
 
@@ -140,7 +159,7 @@
   </section>
 
   <section class="cta-band reveal" id="download">
-    <h2>Experimentem connosco</h2>
+    <h2>Instalar o Clovie</h2>
     <p>Só para Android, por agora. Transfere diretamente daqui e não de uma loja, por isso o telemóvel vai confirmar duas vezes antes de abrir o ficheiro.</p>
     <a class="btn" href="https://github.com/JoaoAfonsoP/clovie-pages/releases/latest/download/clovie.apk">Instalar para Android</a>
     <p class="version-line">Vais receber a versão <!--version-->1.0.3 (build 61)<!--/version-->. <a href="../whats-new.html">O que mudou</a>, em inglês.</p>
@@ -155,15 +174,17 @@
 </main>
 
 <footer class="site-footer">
-  <nav>
+  <nav aria-label="Mais">
+    <a href="index.html">Início</a>
     <a href="support.html">Ajuda</a>
     <a href="../whats-new.html">O que mudou</a>
     <a href="privacy.html">Privacidade</a>
-    <a href="delete-account.html">Eliminar uma conta</a>
-    <a href="join.html">Tens um código de convite?</a>
-    <a href="mailto:hello@clovie.eu">Contacto</a>
+    <a href="terms.html">Termos</a>
+    <a href="delete-account.html">Apagar uma conta</a>
+    <a href="join.html">Tens um código?</a>
+    <a href="../index.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
   </nav>
-  O Clovie é feito e gerido pelas duas pessoas que o usam.
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
 </footer>
 
 <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>

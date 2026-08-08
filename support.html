@@ -13,34 +13,49 @@
   } catch (e) {}
 })();
 </script>
-<title>Clovie — Help</title>
+<title>Clovie &middot; Help</title>
 <meta name="description" content="How to get hold of us, and answers to the things people ask most.">
 <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/support.html">
 <link rel="alternate" hreflang="en" href="https://clovie.eu/support.html">
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/support.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/support.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/support.html">
-<meta property="og:title" content="Clovie — Help">
+<meta property="og:title" content="Clovie &middot; Help">
 <meta property="og:description" content="How to get hold of us, and answers to the things people ask most.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie — Help">
+<meta name="twitter:title" content="Clovie &middot; Help">
 <meta name="twitter:description" content="How to get hold of us, and answers to the things people ask most.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">What it does</a>
+    <a href="index.html#download">Get it</a>
+    <a href="support.html">Help</a>
+    <a href="pt/support.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+</header>
+
+<main id="main">
   <h1>Help</h1>
   <p class="subtitle">How to get hold of us, and answers to the things people
   ask most.</p>
 
-  <p>Write to <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>. Two of us
-  read it, so an answer usually takes a day or two rather than an hour. If
+  <p>Write to <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>. An answer
+  usually takes a day or two rather than an hour. If
   something went wrong, say what you tapped and what happened instead, and
   which version you are on. The version is at the bottom of the Us tab.</p>
 
@@ -95,12 +110,20 @@
   page</a>. Whoever you are paired with keeps their own copy of everything
   exactly as it was.</p>
 
-  <footer>
-    Anything not answered here goes to
-    <a href="mailto:hello@clovie.eu">hello@clovie.eu</a>. &middot;
-    <a href="privacy.html">Privacy</a> &middot;
-    <a href="pt/support.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
-  </footer>
 </main>
+
+<footer class="site-footer">
+  <nav aria-label="More">
+    <a href="index.html">Home</a>
+    <a href="support.html">Help</a>
+    <a href="whats-new.html">What's new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="join.html">Have an invite code?</a>
+    <a href="pt/support.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
 </body>
 </html>

@@ -13,28 +13,43 @@
   } catch (e) {}
 })();
 </script>
-<title>Clovie — Delete your account</title>
+<title>Clovie &middot; Delete your account</title>
 <meta name="description" content="Two ways to do it, depending on whether the app is still on your phone.">
 <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/delete-account.html">
 <link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html">
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/delete-account.html">
-<meta property="og:title" content="Clovie — Delete your account">
+<meta property="og:title" content="Clovie &middot; Delete your account">
 <meta property="og:description" content="Two ways to do it, depending on whether the app is still on your phone.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie — Delete your account">
+<meta name="twitter:title" content="Clovie &middot; Delete your account">
 <meta name="twitter:description" content="Two ways to do it, depending on whether the app is still on your phone.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">What it does</a>
+    <a href="index.html#download">Get it</a>
+    <a href="support.html">Help</a>
+    <a href="pt/delete-account.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+</header>
+
+<main id="main">
   <h1>Delete your account</h1>
   <p class="subtitle">Two ways to do it, depending on whether the app is still on your phone.</p>
 
@@ -104,6 +119,20 @@
 
   <p><a href="privacy.html">Back to the privacy page</a>. &middot; <a href="pt/delete-account.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a></p>
 </main>
+
+<footer class="site-footer">
+  <nav aria-label="More">
+    <a href="index.html">Home</a>
+    <a href="support.html">Help</a>
+    <a href="whats-new.html">What's new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="join.html">Have an invite code?</a>
+    <a href="pt/delete-account.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import {

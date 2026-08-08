@@ -13,28 +13,43 @@
   } catch (e) {}
 })();
 </script>
-<title>Clovie — Join</title>
+<title>Clovie &middot; Join</title>
 <meta name="description" content="Someone using Clovie sent you this to share their calendar and shared space.">
 <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/join.html">
 <link rel="alternate" hreflang="en" href="https://clovie.eu/join.html">
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/join.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/join.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/join.html">
-<meta property="og:title" content="Clovie — Join">
+<meta property="og:title" content="Clovie &middot; Join">
 <meta property="og:description" content="Someone using Clovie sent you this to share their calendar and shared space.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie — Join">
+<meta name="twitter:title" content="Clovie &middot; Join">
 <meta name="twitter:description" content="Someone using Clovie sent you this to share their calendar and shared space.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">What it does</a>
+    <a href="index.html#download">Get it</a>
+    <a href="support.html">Help</a>
+    <a href="pt/join.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+</header>
+
+<main id="main">
   <h1>Join a shared account</h1>
   <p class="subtitle">Someone using Clovie sent you this to share their calendar and shared space.</p>
 
@@ -53,6 +68,20 @@
 
   <p><a href="privacy.html">Privacy</a> &middot; <a href="delete-account.html">Delete an account</a> &middot; <a href="mailto:hello@clovie.eu">Contact</a> &middot; <a href="pt/join.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a></p>
 </main>
+
+<footer class="site-footer">
+  <nav aria-label="More">
+    <a href="index.html">Home</a>
+    <a href="support.html">Help</a>
+    <a href="whats-new.html">What's new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="join.html">Have an invite code?</a>
+    <a href="pt/join.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
 <script>
 (function () {
   var code = new URLSearchParams(location.search).get('code');

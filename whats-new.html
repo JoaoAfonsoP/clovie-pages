@@ -3,30 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clovie &mdash; What's new</title>
+<title>Clovie &middot; What's new</title>
 <meta name="description" content="Everything that changed in Clovie, newest first.">
 <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/whats-new.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/whats-new.html">
-<meta property="og:title" content="Clovie &mdash; What's new">
+<meta property="og:title" content="Clovie &middot; What's new">
 <meta property="og:description" content="Everything that changed in Clovie, newest first.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie &mdash; What's new">
+<meta name="twitter:title" content="Clovie &middot; What's new">
 <meta name="twitter:description" content="Everything that changed in Clovie, newest first.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">What it does</a>
+    <a href="index.html#download">Get it</a>
+    <a href="support.html">Help</a>
+    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+</header>
+
+<main id="main">
   <h1>What's new</h1>
   <p class="subtitle">Everything that changed, newest first. The version on
-  the site right now is 1.0.3 (build 61).</p>
+  the site right now is 1.0.3 (build 61). Written as each change was made, so
+  nothing here is a guess, and only in English for now.</p>
 
-  <h2>2026-08-08</h2>
+  <h2>8 August 2026</h2>
   <p>Your best is marked with a star, in your own colour: on the best set of an exercise, on the set that just beat it, on the day it came from, and on the session in the list where it happened. Before this the app knew your record and only ever said so once, in the confetti at the end.</p>
   <p>A set is written down the moment you save it. Backing out of a workout, a flat battery, or Android closing the app behind you now leave every set that was already in. Before this the whole session sat in memory until Done was pressed, and somebody lost a session that way, which is what started all of this.</p>
   <p>Starting a workout opens a full page instead of a sheet that covered half the screen, and correcting an old session or starting from a routine open that same page.</p>
@@ -35,7 +51,7 @@
   <p>Weights can be read in pounds. It is a setting on your own phone, and what is stored never changes, so one of you can read pounds while the other reads kilograms.</p>
   <p>The theme, the accent, the hand-picked colours, the language and the record confetti are yours alone now. They used to travel between the two phones as one bundle, so changing the language on one changed it on the other. Updating keeps each phone looking exactly as it does today. Only the names, nicknames, colours and pronouns you set for each other are still shared.</p>
   <p>Building a routine, a recipe or an event is a full page too, and backing out of one with something half-written asks before it throws it away.</p>
-  <h2>2026-08-07</h2>
+  <h2>7 August 2026</h2>
   <p>A whole-day event's reminder no longer pushes the word "Reminder" off its own row in the event editor. The choices there now say "Morning before" and "Evening before" instead of spelling the hour out, which is what made the row too wide to hold both.</p>
   <p>A new event now comes with a reminder already on it, half an hour before if it has an hour, and nine in the morning the day before if it is a whole day. Before this a shared calendar stayed silent unless somebody remembered to set a reminder by hand on every single event. Any event can still be given a different one, or none at all.</p>
   <p>The Us screen has a Notifications section: one switch for event reminders, the two times a new event is given, one switch for the period reminder, and the button that asks Android for permission if it has not been given yet. Every switch there belongs to that phone, so turning something off on one phone leaves the other one alone.</p>
@@ -43,16 +59,16 @@
   <p>The licences list now includes Manrope, the font the app is set in, with its licence text.</p>
   <p>Nothing to see: the public registration record for clovie.eu no longer carries a personal e-mail address.</p>
   <p>Nothing to see: the privacy check that compares the app, the docs and the website can now stop a release instead of only warning about it.</p>
-  <h2>2026-08-06</h2>
+  <h2>6 August 2026</h2>
   <p>The home screen could greet you with a days-together count below zero, when the start date sat in the future because of a typo in setup or a phone whose clock had run ahead. It reads as no days together yet instead.</p>
   <p>Joining a household could occasionally place both partners on the same side, mixing up whose workouts, cycle days, meals and weigh-ins belonged to whom. This is now caught and corrected the moment it happens, moving everything back to the right person automatically.</p>
   <p>Each partner's own profile, name, nickname, avatar and pronoun, and the couple's shared preferences, theme, colours, language, now sync properly between phones instead of one phone's change being able to overwrite the other's.</p>
   <p>The weight, exercise and gym progress charts can now be tapped or dragged along to see the exact value and date behind any point, instead of only showing a plain trend line.</p>
   <p>An invite code for joining a household now expires after a while instead of working forever, so an old code shared by accident cannot still be used much later.</p>
   <p>Fixed a bug where two phones in different time zones could disagree about which of two changes happened more recently, occasionally letting an older change overwrite a newer one.</p>
-  <h2>2026-08-01</h2>
+  <h2>1 August 2026</h2>
   <p>The app now correctly shows itself as version 1.0.1.</p>
-  <h2>2026-07-31</h2>
+  <h2>31 July 2026</h2>
   <p>The Us screen's nickname field is now labeled with a plain "Nickname" instead of a pronoun-specific sentence.</p>
   <p>Cycle tracking's on/off toggle is now a full switch row instead of a small unlabeled chip, and onboarding now asks once, up front, whether you track a cycle, still changeable later from your own edit page.</p>
   <p>The shopping list now offers live suggestions while you type, ranked by your own past purchases first.</p>
@@ -62,7 +78,7 @@
   <p>Whether you track a cycle now toggles from your own edit page, next to your pronoun, instead of sitting on the shared screen.</p>
   <p>Add and remove example data now works on a real phone again, not just in development.</p>
   <p>The example data now covers a full three months of history.</p>
-  <h2>2026-07-30</h2>
+  <h2>30 July 2026</h2>
   <p>A later month's early days no longer show the wrong cycle colour.</p>
   <p>You can now rename a routine from a long press, the same way exercises already could.</p>
   <p>Log Food now has a scan button. Point it at a barcode and it fills in the product automatically, or type the digits by hand if the camera can't read it or isn't allowed.</p>
@@ -90,7 +106,7 @@
   <p>If the calendar is left open overnight, or the app sits in the background across midnight, it now catches up to today on its own instead of getting stuck on yesterday.</p>
   <p>If your phone loses signal mid-save, the app now keeps trying quietly in the background instead of waiting for you to touch something.</p>
   <p>Fixed a security gap where one partner could have kicked the other out of the shared household. Nothing changes for normal use.</p>
-  <h2>2026-07-29</h2>
+  <h2>29 July 2026</h2>
   <p>The hidden game's ball now drops toward the paddle first, and every bounce off a wall, the ceiling, a brick, or the paddle makes a sound.</p>
   <p>The secret heart-tap game's ball now eases in noticeably slower and launches gentler, on every life, not just the first.</p>
   <p>Your name and pronoun now change from a small edit icon next to your own name on the Us screen, not by typing in place. Nobody can switch which phone they are after the first setup anymore.</p>
@@ -110,7 +126,7 @@
   <p>The hidden heart-tap game now appears right away instead of fading in slowly, so the ball drop and heart pulse are visible from the start.</p>
   <p>The hidden heart-tap game's ball now picks up a little speed the longer you keep it going in one life, up to a cap, and returns to its normal starting speed each time you lose a life.</p>
   <p>The home screen now always shows a way into the cycle tracker, even before your first entry, and the "add something" hint can be tapped to add it directly.</p>
-  <h2>2026-07-28</h2>
+  <h2>28 July 2026</h2>
   <p>The hidden heart-tap game now turns its whole welcome message into bricks, not just the title, and moves a bit faster.</p>
   <p>There are three new accent colours to choose from, Slate, Navy and Teal. Onboarding also now asks once for your own name instead of asking for both, with a small dot in the corner if you need to say which side is you.</p>
   <p>In Gym, you can now swipe left or right on the page to switch between your stats and your partner's.</p>
@@ -119,10 +135,20 @@
   <p>The hidden heart game starts faster now, and the heart visibly turns into the ball as you tap into it instead of just appearing. The small side picker on the names page is now a labelled pill instead of a tiny hidden dot.</p>
   <p>The date on Us is now a visible button instead of a plain line of text. The calendars card also now says you can switch off any you don't want synced, since that was already possible but wasn't obvious from the wording.</p>
   <p>Sharing your invite now sends a real link. Tapping it on your partner's phone opens Clovie straight to Shared account with the code already filled in, instead of them having to type it.</p>
-  <footer>
-    Written as each change was made, so nothing here is a guess. Only in
-    English, for now. &middot; <a href="index.html">Back to the app</a>
-  </footer>
 </main>
+
+<footer class="site-footer">
+  <nav aria-label="More">
+    <a href="index.html">Home</a>
+    <a href="support.html">Help</a>
+    <a href="whats-new.html">What's new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="join.html">Have an invite code?</a>
+    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
 </body>
 </html>

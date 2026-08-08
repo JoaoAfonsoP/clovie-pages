@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://clovie.eu/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/"/>
@@ -12,7 +12,7 @@
 
   <url>
     <loc>https://clovie.eu/pt/index.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/"/>
@@ -20,7 +20,7 @@
 
   <url>
     <loc>https://clovie.eu/privacy.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/privacy.html"/>
@@ -28,7 +28,7 @@
 
   <url>
     <loc>https://clovie.eu/pt/privacy.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/privacy.html"/>
@@ -36,7 +36,7 @@
 
   <url>
     <loc>https://clovie.eu/delete-account.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html"/>
@@ -44,7 +44,7 @@
 
   <url>
     <loc>https://clovie.eu/pt/delete-account.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/delete-account.html"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/delete-account.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/delete-account.html"/>
@@ -75,7 +75,7 @@
 
   <url>
     <loc>https://clovie.eu/join.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/join.html"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/join.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/join.html"/>
@@ -83,10 +83,26 @@
 
   <url>
     <loc>https://clovie.eu/pt/join.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/join.html"/>
     <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/join.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/join.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/terms.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/terms.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/terms.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/terms.html"/>
   </url>
 
 </urlset>

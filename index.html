@@ -13,31 +13,49 @@
   } catch (e) {}
 })();
 </script>
-<title>Clovie — a calendar and a kitchen and a training log, for two</title>
+<title>Clovie &middot; a calendar, a kitchen and a training log, for two</title>
 <meta name="description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
 <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/">
 <link rel="alternate" hreflang="en" href="https://clovie.eu/">
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/">
-<meta property="og:title" content="Clovie — a calendar and a kitchen and a training log, for two">
+<meta property="og:title" content="Clovie &middot; a calendar, a kitchen and a training log, for two">
 <meta property="og:description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
 <meta property="og:image" content="https://clovie.eu/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clovie — a calendar and a kitchen and a training log, for two">
+<meta name="twitter:title" content="Clovie &middot; a calendar, a kitchen and a training log, for two">
 <meta name="twitter:description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
 <meta name="twitter:image" content="https://clovie.eu/img/og.png">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clovie",
+  "operatingSystem": "Android",
+  "applicationCategory": "LifestyleApplication",
+  "url": "https://clovie.eu/",
+  "downloadUrl": "https://github.com/JoaoAfonsoP/clovie-pages/releases/latest/download/clovie.apk",
+  "image": "https://clovie.eu/img/og.png",
+  "description": "A calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
 </head>
 <body class="marketing">
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header">
   <span class="wordmark"><img src="img/icon.png" alt="" width="40" height="40">Clovie</span>
-  <nav>
+  <nav aria-label="Site">
     <a href="#features">What it does</a>
     <a href="#download">Get it</a>
     <a href="support.html">Help</a>
@@ -45,7 +63,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main">
 
   <section class="hero">
     <div>
@@ -63,8 +81,8 @@
 
   <section class="origin">
     <div class="origin-inner reveal">
-      <h2>Why we made this</h2>
-      <p>We built Clovie for the two of us, to keep our own stuff straight: training, recipes, the shopping list for the day. We kept asking each other what we had coming up, so we started putting it in the app instead of asking. A small group of people are trying it with us now.</p>
+      <h2>Why Clovie exists</h2>
+      <p>Clovie is built for two people who share a life, not for a household of ten on a plan with a monthly fee. One calendar, one shopping list, one recipe book, and a training log each. It started with the question two people ask each other most, what have we got on this week, and the answer belongs somewhere both of you can see.</p>
     </div>
   </section>
 
@@ -141,7 +159,7 @@
   </section>
 
   <section class="cta-band reveal" id="download">
-    <h2>Try it with us</h2>
+    <h2>Get Clovie</h2>
     <p>Android only, for now. It downloads straight from here rather than from a store, so your phone will check with you twice before it opens the file.</p>
     <a class="btn" href="https://github.com/JoaoAfonsoP/clovie-pages/releases/latest/download/clovie.apk">Get it for Android</a>
     <p class="version-line">You'll get version <!--version-->1.0.3 (build 61)<!--/version-->. <a href="whats-new.html">What changed</a>.</p>
@@ -156,15 +174,17 @@
 </main>
 
 <footer class="site-footer">
-  <nav>
+  <nav aria-label="More">
+    <a href="index.html">Home</a>
     <a href="support.html">Help</a>
     <a href="whats-new.html">What's new</a>
     <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
     <a href="delete-account.html">Delete an account</a>
     <a href="join.html">Have an invite code?</a>
-    <a href="mailto:hello@clovie.eu">Contact</a>
+    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
   </nav>
-  Clovie is built and run by the two people using it.
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
 </footer>
 
 <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>

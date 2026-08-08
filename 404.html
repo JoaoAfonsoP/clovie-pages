@@ -3,13 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clovie — Page not found</title>
+<title>Clovie &middot; Page not found</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">What it does</a>
+    <a href="index.html#download">Get it</a>
+    <a href="support.html">Help</a>
+    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+</header>
+
+<main id="main">
   <h1>Page not found</h1>
   <p class="subtitle">There's nothing at this address.</p>
 
@@ -19,5 +34,19 @@
 
   <p><a href="privacy.html">Privacy</a> &middot; <a href="delete-account.html">Delete an account</a> &middot; <a href="join.html">Have an invite code?</a></p>
 </main>
+
+<footer class="site-footer">
+  <nav aria-label="More">
+    <a href="index.html">Home</a>
+    <a href="support.html">Help</a>
+    <a href="whats-new.html">What's new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="join.html">Have an invite code?</a>
+    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
 </body>
 </html>
