@@ -405,6 +405,16 @@ body.marketing a:hover { text-decoration: underline; }
   color: var(--muted);
   margin: 0 0 26px;
 }
+/* The site once served an eight-build-old file while the version name
+   read 1.0.3 in both, so it looked current the whole time. The build
+   number is what tells them apart, and the build that uploads the file
+   writes this line, so the page cannot claim one thing while the button
+   hands over another. */
+.cta-band .version-line {
+  margin: 18px 0 0;
+  font-size: 0.85rem;
+}
+
 /* A download that is not from a store means Android asks twice before it
    will open the file, and people give up at the second prompt if nobody
    warned them. The steps sit left-aligned inside the centred band because
