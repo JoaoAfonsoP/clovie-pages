@@ -390,7 +390,10 @@ a.wordmark { text-decoration: none !important; }
 .feature:first-child { border-top: none; }
 .feature:nth-child(even) .feature-art { order: 2; }
 .feature:nth-child(even) .feature-copy { order: 1; }
-.feature:nth-child(3) .feature-art > .shot { transform: rotate(-1.6deg); }
+/* The two sections with a single screen lean as well, and not the same
+   way as each other, or they read as the tidy ones next to the stacks. */
+.feature:nth-child(2) .feature-art > .shot { transform: rotate(1.8deg); }
+.feature:nth-child(5) .feature-art > .shot { transform: rotate(-2deg); }
 .feature-art .shot { max-width: 280px; margin: 0 auto; }
 .feature-art .pair { position: relative; max-width: 460px; margin: 0 auto; padding-bottom: 72px; }
 .feature-art .pair .shot { max-width: none; margin: 0; }
@@ -398,15 +401,23 @@ a.wordmark { text-decoration: none !important; }
 .feature-art .pair .b { width: 52%; position: absolute; right: 0; top: 68px; z-index: 1; transform: rotate(2.2deg); }
 /* The middle section steps the other way, so three sections are not the
    same picture three times over. */
+.feature-art .pair.mirror { padding-bottom: 96px; }
 .feature-art .pair.mirror .a { margin-left: auto; transform: rotate(2deg); }
 .feature-art .pair.mirror .b { right: auto; left: 0; top: 92px; transform: rotate(-2.4deg); }
 
 /* Training has three screens to show, so that section gives up the two
-   columns and lays them across the whole width instead. */
+   columns and lays them across the whole width instead. The heading comes
+   first here on purpose, not because this happens to be an even section:
+   three phones with nothing said above them read as a wall. */
 .feature.feature-wide { grid-template-columns: 1fr; gap: 36px; }
+.feature.feature-wide .feature-art { order: 2; }
+.feature.feature-wide .feature-copy { order: 1; }
 .feature.feature-wide .feature-copy p { max-width: 62ch; }
-.feature-art .trio { display: flex; gap: 18px; align-items: flex-start; }
-.feature-art .trio .shot { max-width: none; width: 100%; margin: 0; }
+.feature-art .trio { display: flex; gap: 26px; align-items: flex-start; }
+/* `flex: 1 1 0` and not `width: 100%`: a flex item will not shrink below
+   the picture's own 640px unless min-width is taken off it, and three of
+   those give the whole page a sideways scrollbar. */
+.feature-art .trio .shot { flex: 1 1 0; min-width: 0; max-width: none; margin: 0; }
 .feature-art .trio .shot:nth-child(1) { transform: rotate(-2.2deg); }
 .feature-art .trio .shot:nth-child(2) { margin-top: 30px; transform: rotate(1.4deg); }
 .feature-art .trio .shot:nth-child(3) { margin-top: 8px; transform: rotate(-1deg); }
@@ -552,8 +563,11 @@ a.wordmark { text-decoration: none !important; }
   .site-header nav a { margin-left: 16px; }
   /* Three phones across a phone is three phones nobody can read, so on a
      narrow screen the row slides sideways instead of shrinking. */
-  .feature-art .trio { overflow-x: auto; gap: 14px; }
-  .feature-art .trio .shot { flex: 0 0 64%; }
+  /* The padding is not decoration: `overflow-x: auto` clips the vertical
+     axis too, and these three are tilted, so without it the leaning
+     corners get shaved off. */
+  .feature-art .trio { overflow-x: auto; gap: 14px; padding: 14px 0; }
+  .feature-art .trio .shot { flex: 0 0 64%; min-width: 0; }
   .feature-art .trio .shot:nth-child(2) { margin-top: 0; }
   .feature-art .trio .shot:nth-child(3) { margin-top: 0; }
 }
