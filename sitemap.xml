@@ -105,4 +105,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/terms.html"/>
   </url>
 
+  <url>
+    <loc>https://clovie.eu/testers.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/testers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/testers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/testers.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/testers.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/testers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/testers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/testers.html"/>
+  </url>
+
 </urlset>
