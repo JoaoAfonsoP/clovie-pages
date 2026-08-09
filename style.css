@@ -252,8 +252,12 @@ a.wordmark { text-decoration: none !important; }
   font-size: 0.98rem;
   color: #fff !important;
   background: var(--accent-strong);
+  /* The prose pages underline their links, and a pill with a line under the
+     words in it reads as a mistake. Said here rather than per page, so a
+     button behaves the same wherever one is put. */
+  text-decoration: none !important;
 }
-.btn:hover { text-decoration: none !important; filter: brightness(1.08); }
+.btn:hover { filter: brightness(1.08); }
 
 .shot {
   display: block;
