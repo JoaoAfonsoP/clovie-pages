@@ -495,10 +495,16 @@ a.wordmark { text-decoration: none !important; }
 .install-steps li { margin-bottom: 10px; }
 .install-steps li:last-child { margin-bottom: 0; }
 .install-steps strong { color: var(--fg); font-weight: 600; }
+/* The line under a button, wherever one stands on its own. Smaller and
+   quieter than the sentence that led up to it, so it reads as a footnote to
+   the button and not as one more thing to decide. */
+.cta-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 .cta-band .cta-note {
   margin: 24px auto 0;
   max-width: 460px;
-  font-size: 0.85rem;
 }
 
 .site-footer {
