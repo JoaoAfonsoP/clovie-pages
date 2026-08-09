@@ -62,8 +62,8 @@
   <p id="noCode" hidden>Falta o código a este link. Pede a quem o enviou
   para o partilhar de novo.</p>
 
-  <p>Ainda não tens o Clovie? <a id="download" href="#">Instala para Android</a>,
-  e depois abre este link outra vez.</p>
+  <p>Ainda não tens o Clovie? <a href="testers.html">Experimentar já</a>, e
+  depois abre este link outra vez.</p>
 </main>
 
 <footer class="site-footer">
@@ -74,7 +74,7 @@
     <a href="privacy.html">Privacidade</a>
     <a href="terms.html">Termos</a>
     <a href="delete-account.html">Apagar uma conta</a>
-    <a href="testers.html">Ser tester</a>
+    <a href="testers.html">Experimentar já</a>
     <a href="join.html">Tens um código?</a>
     <a href="../join.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
   </nav>
@@ -83,9 +83,6 @@
 <script>
 (function () {
   var code = new URLSearchParams(location.search).get('code');
-  /* A página inicial e não o ficheiro: a transferência precisa dos dois
-     avisos do Android explicados, e essa explicação está lá. */
-  document.getElementById('download').href = 'index.html#download';
   if (code) {
     document.getElementById('code').textContent = code;
     location.href = 'clovie://join?code=' + encodeURIComponent(code);

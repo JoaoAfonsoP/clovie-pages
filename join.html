@@ -63,8 +63,8 @@
   <p id="noCode" hidden>This link is missing its code. Ask whoever sent it
   to share it again.</p>
 
-  <p>Don't have Clovie yet? <a id="download" href="#">Get it for Android</a>,
-  then open this link again.</p>
+  <p>Don't have Clovie yet? <a href="testers.html">Try it early</a>, then open
+  this link again.</p>
 </main>
 
 <footer class="site-footer">
@@ -75,7 +75,7 @@
     <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms</a>
     <a href="delete-account.html">Delete an account</a>
-    <a href="testers.html">Be a tester</a>
+    <a href="testers.html">Try it early</a>
     <a href="join.html">Have an invite code?</a>
     <a href="pt/join.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
   </nav>
@@ -84,9 +84,6 @@
 <script>
 (function () {
   var code = new URLSearchParams(location.search).get('code');
-  /* The homepage rather than the file itself: the download needs the two
-     Android prompts explained, and that explanation lives there. */
-  document.getElementById('download').href = 'index.html#download';
   if (code) {
     document.getElementById('code').textContent = code;
     location.href = 'clovie://join?code=' + encodeURIComponent(code);
