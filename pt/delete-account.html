@@ -143,10 +143,9 @@ import {
   writeBatch, updateDoc, arrayRemove,
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-// Same Firebase project as the app (clovie-b60de), a separate Web app
+// Same Firebase project as the app, with a separate Web app
 // registration so this page has its own client config. Mirrors the
-// deletion sequence in lib/data/firebase_cloud.dart and
-// lib/data/firestore_backend.dart exactly: wipe every row in every group
+// app's own deletion sequence exactly: wipe every row in every group
 // only if this is the household's last member, otherwise just leave, then
 // delete the sign-in itself. The household document is never deleted, by
 // the same rule the app follows.
