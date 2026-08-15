@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'en' &&
+        /^pt\b/i.test(navigator.language || '')) {
+      location.replace('pt/whats-new.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Clovie &middot; What's new</title>
 <meta name="description" content="Everything that changed in Clovie, newest first.">
 <link rel="icon" type="image/png" href="img/icon.png">
@@ -10,6 +20,9 @@
 <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://clovie.eu/whats-new.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/whats-new.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/whats-new.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/whats-new.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clovie.eu/whats-new.html">
 <meta property="og:title" content="Clovie &middot; What's new">
@@ -32,7 +45,7 @@
     <a href="index.html#features">What it does</a>
     <a href="index.html#download">Get it</a>
     <a href="support.html">Help</a>
-    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+    <a href="pt/whats-new.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
   </nav>
 </header>
 
@@ -40,7 +53,7 @@
   <h1>What's new</h1>
   <p class="subtitle">Everything that changed, version by version, newest
   first. The newest build is 1.0.6 (build 105). Written as each change was made, so
-  nothing here is a guess, and only in English for now.</p>
+  nothing here is a guess.</p>
 
   <h2>1.0.6 · 15 August 2026</h2>
   <ul>
@@ -142,7 +155,7 @@
     <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms</a>
     <a href="testers.html">Try it early</a>
-    <a href="pt/index.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
+    <a href="pt/whats-new.html" onclick="try{localStorage.setItem('clovie-lang','pt')}catch(e){}">PT</a>
   </nav>
   <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
 </footer>
