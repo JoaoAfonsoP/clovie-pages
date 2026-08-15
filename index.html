@@ -24,6 +24,9 @@
 <link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/index.html">
 <link rel="alternate" hreflang="x-default" href="https://clovie.eu/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Clovie">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="pt_PT">
 <meta property="og:url" content="https://clovie.eu/">
 <meta property="og:title" content="Clovie &middot; a calendar, a kitchen and a training log, for two">
 <meta property="og:description" content="Clovie is a calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.">
@@ -38,15 +41,55 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Clovie",
-  "operatingSystem": "Android",
-  "applicationCategory": "LifestyleApplication",
-  "url": "https://clovie.eu/",
-  "installUrl": "https://clovie.eu/testers.html",
-  "image": "https://clovie.eu/img/og.png",
-  "description": "A calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://clovie.eu/#website",
+      "url": "https://clovie.eu/",
+      "name": "Clovie",
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://clovie.eu/#publisher" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://clovie.eu/#publisher",
+      "name": "Clovie",
+      "url": "https://clovie.eu/",
+      "logo": "https://clovie.eu/img/icon.png",
+      "email": "hello@clovie.eu"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://clovie.eu/#app",
+      "name": "Clovie",
+      "url": "https://clovie.eu/",
+      "operatingSystem": "Android",
+      "applicationCategory": "LifestyleApplication",
+      "installUrl": "https://clovie.eu/testers.html",
+      "image": "https://clovie.eu/img/og.png",
+      "screenshot": [
+        "https://clovie.eu/img/shot-home.jpg",
+        "https://clovie.eu/img/shot-calendar.jpg",
+        "https://clovie.eu/img/shot-shopping.jpg",
+        "https://clovie.eu/img/shot-recipes.jpg",
+        "https://clovie.eu/img/shot-gym.jpg"
+      ],
+      "inLanguage": ["en-GB", "pt-PT"],
+      "isFamilyFriendly": true,
+      "description": "A calendar, a shopping list, a recipe book, a training log and a cycle tracker for two people to share.",
+      "featureList": [
+      "Shared calendar for two, with each person colour-coded",
+      "Shared shopping list, sorted into supermarket aisles",
+      "Recipe book, with any recipe turned into a shopping list",
+      "Training log with per-exercise history, graphs and bodyweight",
+      "Food log with calories, protein, carbohydrate and fat",
+      "Cycle tracking for either person, or both, or neither",
+      "Works on one phone with no account, and nothing leaves it"
+      ],
+      "publisher": { "@id": "https://clovie.eu/#publisher" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+  ]
 }
 </script>
 </head>
