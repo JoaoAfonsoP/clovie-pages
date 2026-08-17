@@ -273,18 +273,13 @@ a.wordmark { text-decoration: none !important; }
   transform: rotate(2.5deg);
 }
 
-/* The story and the pairing sit side by side. Stacked, they read as two
-   identical slabs with half the page empty next to them. */
 .origin {
   max-width: 1080px;
   margin: 0 auto;
   padding: 8px 20px 88px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  align-items: start;
 }
 .origin-inner {
+  max-width: 640px;
   border-left: 3px solid var(--accent-2);
   padding-left: 24px;
 }
@@ -570,11 +565,6 @@ a.wordmark { text-decoration: none !important; }
   .feature:nth-child(even) .feature-art,
   .feature:nth-child(even) .feature-copy {
     order: initial;
-  }
-  .origin {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    padding-bottom: 64px;
   }
   .site-header nav a { margin-left: 16px; }
   /* Three phones across a phone is three phones nobody can read, so on a
