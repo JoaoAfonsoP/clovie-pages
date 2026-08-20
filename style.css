@@ -259,6 +259,23 @@ a.wordmark { text-decoration: none !important; }
 }
 .btn:hover { filter: brightness(1.08); }
 
+/* The quieter sibling of .btn, for the choice that should not shout:
+   same pill, drawn with a line instead of a fill. */
+.btn-quiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--fg) !important;
+  background: transparent;
+  border: 1px solid var(--line);
+  text-decoration: none !important;
+}
+.btn-quiet:hover { border-color: var(--accent-strong); }
+
 .shot {
   display: block;
   width: 100%;
