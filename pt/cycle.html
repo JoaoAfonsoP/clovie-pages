@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'pt' &&
+        !/^pt\b/i.test(navigator.language || '')) {
+      location.replace('../cycle.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
+<title>Clovie &middot; Registo de ciclo para dois</title>
+<meta name="description" content="Um diário de ciclo que fica entre os dois. Períodos, sintomas e uma previsão, numa conta partilhada e em mais lado nenhum.">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://clovie.eu/pt/cycle.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/cycle.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/cycle.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/cycle.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clovie">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:url" content="https://clovie.eu/pt/cycle.html">
+<meta property="og:title" content="Clovie &middot; Registo de ciclo para dois">
+<meta property="og:description" content="Um diário de ciclo que fica entre os dois. Períodos, sintomas e uma previsão, numa conta partilhada e em mais lado nenhum.">
+<meta property="og:image" content="https://clovie.eu/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clovie &middot; Registo de ciclo para dois">
+<meta name="twitter:description" content="Um diário de ciclo que fica entre os dois. Períodos, sintomas e uma previsão, numa conta partilhada e em mais lado nenhum.">
+<meta name="twitter:image" content="https://clovie.eu/img/og.png">
+<link rel="stylesheet" href="../style.css">
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"321b2207336f4befaa24310cd77fcaa7"}'></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="../img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">O que faz</a>
+    <a href="index.html#download">Instalar</a>
+    <a href="support.html">Ajuda</a>
+    <a href="../cycle.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+</header>
+
+<main id="main">
+  <h1>Um ciclo, guardado entre os dois</h1>
+  <p class="subtitle">Não é uma plataforma de anúncios. É um diário que a pessoa certa pode ver.</p>
+
+  <img class="shot" src="../img/pt/shot-cycle.jpg" alt="O ecrã de ciclo com o dia atual, uma previsão e espaço para sintomas e humor" width="640" height="1385" loading="eager" style="max-width:320px;height:auto;">
+
+<p>Períodos, sintomas, humor e fluxo entram quando acontecem, e
+qualquer mês pode ser preenchido tarde ou corrigido. A previsão lê o que
+foi mesmo escrito, e melhora à medida que o diário melhora.</p>
+<p>Vive na vossa conta partilhada e em mais lado nenhum. Sem publicidade,
+sem venda de dados, e o diário inteiro sai contigo se apagares a conta.
+O que faz com os dados está escrito com clareza na página de
+privacidade.</p>
+<p>Partilhar, ou não, é uma escolha. O registo pode estar ligado para uma
+pessoa, para as duas, ou para nenhuma, e liga-se na página pessoal, não
+escondido.</p>
+
+  <p><a class="btn" href="testers.html">Obter acesso antecipado</a></p>
+  <p>Gratuito, na Google Play. So Android, para já.</p>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Mais">
+    <a href="index.html">Início</a>
+    <a href="support.html">Ajuda</a>
+    <a href="whats-new.html">Novidades</a>
+    <a href="privacy.html">Privacidade</a>
+    <a href="terms.html">Termos</a>
+    <a href="testers.html">Experimentar já</a>
+    <a href="../cycle.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
+</body>
+</html>

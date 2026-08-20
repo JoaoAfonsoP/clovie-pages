@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('clovie-lang') !== 'pt' &&
+        !/^pt\b/i.test(navigator.language || '')) {
+      location.replace('../shopping-list.html' + location.search);
+    }
+  } catch (e) {}
+})();
+</script>
+<title>Clovie &middot; Uma lista de compras partilhada</title>
+<meta name="description" content="Uma lista de compras sempre atual nos dois telemóveis. Escrita no sofá, arrumada por corredores, pronta quando o outro está na loja.">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201d1a" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://clovie.eu/pt/shopping-list.html">
+<link rel="alternate" hreflang="en" href="https://clovie.eu/shopping-list.html">
+<link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/shopping-list.html">
+<link rel="alternate" hreflang="x-default" href="https://clovie.eu/shopping-list.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clovie">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:url" content="https://clovie.eu/pt/shopping-list.html">
+<meta property="og:title" content="Clovie &middot; Uma lista de compras partilhada">
+<meta property="og:description" content="Uma lista de compras sempre atual nos dois telemóveis. Escrita no sofá, arrumada por corredores, pronta quando o outro está na loja.">
+<meta property="og:image" content="https://clovie.eu/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clovie &middot; Uma lista de compras partilhada">
+<meta name="twitter:description" content="Uma lista de compras sempre atual nos dois telemóveis. Escrita no sofá, arrumada por corredores, pronta quando o outro está na loja.">
+<meta name="twitter:image" content="https://clovie.eu/img/og.png">
+<link rel="stylesheet" href="../style.css">
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"321b2207336f4befaa24310cd77fcaa7"}'></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html"><img src="../img/icon.png" alt="" width="40" height="40">Clovie</a>
+  <nav aria-label="Site">
+    <a href="index.html#features">O que faz</a>
+    <a href="index.html#download">Instalar</a>
+    <a href="support.html">Ajuda</a>
+    <a href="../shopping-list.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+</header>
+
+<main id="main">
+  <h1>Uma lista de compras, sempre atual</h1>
+  <p class="subtitle">Escreve no sofá. Está lá na loja.</p>
+
+  <img class="shot" src="../img/pt/shot-shopping.jpg" alt="Lista de compras partilhada arrumada em secções, com quantidades ao lado de cada item" width="640" height="1385" loading="eager" style="max-width:320px;height:auto;">
+
+<p>O que qualquer um de vocês escreve está nos dois telemóveis antes
+de a porta fechar. Os itens arrumam-se por corredores enquanto escreves,
+e a lista sai pela ordem em que se anda na loja.</p>
+<p>As quantidades ficam, um erro corrige-se no sítio em vez de se escrever
+de novo, e riscar num telemóvel risca no outro. Limpar o cesto pode ser
+desfeito, porque os dedos escorregam.</p>
+<p>O livro de receitas manda os ingredientes direitos para a lista, e
+cozinhar algo na quinta começa com dois toques na terça.</p>
+
+  <p><a class="btn" href="testers.html">Obter acesso antecipado</a></p>
+  <p>Gratuito, na Google Play. So Android, para já.</p>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Mais">
+    <a href="index.html">Início</a>
+    <a href="support.html">Ajuda</a>
+    <a href="whats-new.html">Novidades</a>
+    <a href="privacy.html">Privacidade</a>
+    <a href="terms.html">Termos</a>
+    <a href="testers.html">Experimentar já</a>
+    <a href="../shopping-list.html" onclick="try{localStorage.setItem('clovie-lang','en')}catch(e){}">EN</a>
+  </nav>
+  <p class="colophon">&copy; 2026 Clovie &middot; <a href="mailto:hello@clovie.eu">hello@clovie.eu</a></p>
+</footer>
+</body>
+</html>

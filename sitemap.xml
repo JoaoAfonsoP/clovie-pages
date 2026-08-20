@@ -116,4 +116,53 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/testers.html"/>
   </url>
 
+
+  <url>
+    <loc>https://clovie.eu/shared-calendar.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/shared-calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/shared-calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/shared-calendar.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/shared-calendar.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/shared-calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/shared-calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/shared-calendar.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/shopping-list.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/shopping-list.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/shopping-list.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/shopping-list.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/shopping-list.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/shopping-list.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/shopping-list.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/shopping-list.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/cycle.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/cycle.html"/>
+  </url>
+
+  <url>
+    <loc>https://clovie.eu/pt/cycle.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clovie.eu/cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://clovie.eu/pt/cycle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clovie.eu/cycle.html"/>
+  </url>
+
 </urlset>
