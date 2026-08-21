@@ -609,10 +609,10 @@ a.wordmark { text-decoration: none !important; }
 .step-cards {
   list-style: none;
   padding: 0;
-  margin: 28px 0;
+  margin: 28px auto;
+  max-width: 520px;
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
 }
 .step-card {
   position: relative;
@@ -624,7 +624,8 @@ a.wordmark { text-decoration: none !important; }
 }
 .step-card svg { width: 130px; height: auto; margin: 4px auto 10px; display: block; }
 .step-card h2 { font-size: 1.05rem; margin: 0 0 12px; }
-.step-card p { font-size: 0.95rem; margin: 0; }
+.step-card p { font-size: 0.95rem; margin: 0 0 12px; }
+.step-card p:last-child { margin-bottom: 0; }
 .step-num {
   position: absolute;
   top: -12px;
